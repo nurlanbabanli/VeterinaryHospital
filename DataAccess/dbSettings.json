@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Host=localhost; Database=VeterinaryHospital; Username=postgres; Password=123; timeout=1000;"
+  }
+}
