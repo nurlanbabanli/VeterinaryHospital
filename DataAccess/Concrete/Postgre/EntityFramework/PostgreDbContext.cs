@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Concrete;
+using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -34,6 +35,9 @@ namespace DataAccess.Concrete.Postgre.EntityFramework
 
         public DbSet<User> Users { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
-        public DbSet<UserOperationClaim> UserOperations { get; set; }
+        public DbSet<UserOperationClaim> UserOperationsClaims { get; set; }
+        public DbSet<UserType> UserTypes { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<DoctorRating> DoctorRatings { get; set;}
     }
 }

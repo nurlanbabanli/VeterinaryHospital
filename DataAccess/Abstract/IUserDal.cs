@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess.EntityFramework;
 using Core.Entities.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,5 +23,6 @@ namespace DataAccess.Abstract
         /// <param name="user">User to delete</param>
         /// <returns></returns>
         Task<bool> DeleteUserAsync(User user);
+        Task<User> AddUserAsDoctorAsync(User user, Doctor doctor);
     }
 }
